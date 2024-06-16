@@ -11,17 +11,17 @@
 <body>
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="#" class="nav__logo">Tailor</a>
+      <a href="#" class="nav__logo">Derek Yu</a>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li>
-              <a href="#home" class="nav__link">Home</a>
-            </li>
-            <li>
-              <a href="#about" class="nav__link">About Me</a>
+              <a href="#home" class="nav__link ">Home</a>
             </li>
             <li>
               <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li>
+              <a href="#info" class="nav__link active-link">About Me</a>
             </li>
             <li>
               <a href="#contact" class="nav__link">Contact Me</a>
@@ -58,33 +58,7 @@
           <span class="home__scroll-text">Recent works</span>
       </div>
     </section>
-    <!-- about -->
-    <section class="info section" id="info">
-      <h2 class="section__title">About Me</h2>
-
-      <div class="info__container container grid">
-        <!-- About -->
-        <div class="about grid">
-          <div class="about__content">
-            <h3 class="info__title">About Me</h3>
-            <p class="about__description">Passionate about <b>robots</b> and <b>coding stuff</b></p>
-            <a href="DerekYuCV.pdf" download="" class="button about__button">Download CV</a>
-          </div>
-
-          <img src="images/Project-1.jpg" alt="image" class=""about__img>
-        </div>
-
-        <!-- Experience -->
-        <div class="experience">
-
-        </div>
-
-        <!-- Skills -->
-        <div class="skills">
-
-        </div>
-      </div>
-    </section>
+    
     <!-- work -->
     <section class="work section" id="work">
       <h2 class="section__title">RECENT WORKS</h2>
@@ -152,12 +126,169 @@
         </article>
       </div>
     </section>
+
+    <!-- about -->
+    <section class="info section" id="info">
+      <h2 class="section__title">About Me</h2>
+
+      <div class="info__container container grid">
+        <!-- About -->
+        <div class="about grid">
+          <div class="about__content">
+            <h3 class="info__title">About Me</h3>
+            <p class="about__description">Passionate about <b>robots</b> and <b>coding stuff</b></p>
+            <a href="DerekYuCV.pdf" download="" class="button about__button">Download CV</a>
+          </div>
+
+          <img src="images/Project-1.jpg" alt="image" class=""about__img>
+        </div>
+
+        <!-- Experience -->
+        <div class="experience">
+          <h3 class="info__title">Experience</h3>
+
+          <div class="experience__content grid">
+            <div class="experience__data grid">
+              <h2 class="experience__company">Discord</h2>
+              <div>
+                <h3 class="experience__profession">Web Product Designer</h3>
+                <span class="experience__date">05/23 - Present</span>
+                <p class="experience__description">
+                  Short description of the work I do or did for the company.
+                </p>
+              </div>
+            </div>
+
+            <div class="experience__data grid">
+              <h2 class="experience__company">Google</h2>
+              <div>
+                <h3 class="experience__profession">Web Product Developer</h3>
+                <span class="experience__date">05/23 - Present</span>
+                <p class="experience__description">
+                  Short description of the work I do or did for the company.
+                </p>
+              </div>
+            </div>
+
+            <div class="experience__data grid">
+              <h2 class="experience__company">Adobe</h2>
+              <div>
+                <h3 class="experience__profession">Web Designer</h3>
+                <span class="experience__date">05/23 - Present</span>
+                <p class="experience__description">
+                  Short description of the work I do or did for the company.
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="skills">
+          <h3 class="info__title">Skills</h3>
+
+          <div class="skills__content grid">
+            <div class="skills__box">
+              <img src="images/html5.svg" alt="image" class="skills__img">
+              <span class="skills__name">HTML</span>
+            </div>
+
+            <div class="skills__box">
+              <img src="images/css.svg" alt="image" class="skills__img">
+              <span class="skills__name">CSS</span>
+            </div>
+
+            <div class="skills__box">
+              <img src="images/javascript.svg" alt="image" class="skills__img">
+              <span class="skills__name">JavaScript</span>
+            </div>
+
+            <div class="skills__box">
+              <img src="images/c++.svg" alt="image" class="skills__img">
+              <span class="skills__name">C/C++</span>
+            </div>
+
+            <div class="skills__box">
+              <img src="images/github.svg" alt="image" class="skills__img">
+              <span class="skills__name">GitHub</span>
+            </div>
+
+            <div class="skills__box">
+              <img src="images/premiere.svg" alt="image" class="skills__img">
+              <span class="skills__name">Adobe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <!-- contact -->
     <section class="contact section" id="contact">
-      
+      <h2 class="section__title">Contact me</h2>
+
+      <div class="contact__container container grid">
+        <form action="" class="contact__form grid" id="contact-form">
+          <div class="contact__group grid">
+            <input type="text" name="user_name" placeholder="Name" required class="contact__input">
+            <input type="email" name="user_email" placeholder="Email" required class="contact__input">
+          </div>
+
+          <textarea name="user_message" placeholder="Message" required class="contact__input contact__area"></textarea>
+
+          <button type="submit" class="button contact__button">Send Message</button>
+
+          <p class="contact__message" id="contact-message"></p>
+        </form>
+
+        <div class="contact__social grid">
+          <a href="https://github.com/DerekY2" target="_blank" class="contact__social-link">
+            <i class="ri-github-fill"></i>
+            <span>GitHub</span>
+          </a>
+
+          <a href="https://www.instagram.com/_swqxt/" target="_blank" class="contact__social-link">
+            <i class="ri-instagram-line"></i>
+            <span>Instagram</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/derek-yu-53273130b/" target="_blank" class="contact__social-link">
+            <!-- <i class="ri-linkedin-box-fill"></i> -->
+            <i class="ri-linkedin-box-line"></i>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
+  <footer class="footer">
+    <div class="footer__container container grid">
+      <ul class="footer__links">
+        <li>
+          <a href="#home" class="footer__link">Home</a>
+        </li>
+
+        <li>
+          <a href="#work" class="footer__link">Work</a>
+        </li>
+
+        <li>
+          <a href="#info" class="footer__link">Info</a>
+        </li>
+      </ul>
+
+      <span class="footer__copy">
+        &#169 Derek Yu
+      </span>
+    </div>
+  </footer>
+
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
+  </a>
+
   <script src="/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </body>
 </html>
