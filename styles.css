@@ -319,8 +319,12 @@ img {
   background-color: var(--container-color);
 }
 
+#work__img1{
+  width: 60.76rem;
+}
+
 .work__card{
-  background-color: var(--first-color);
+  background-color: var(--body-color);
 }
 
 .work__link{
